@@ -1,4 +1,4 @@
-import { ContentChildren, EventEmitter, Input, Output, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { ContentChildren, EventEmitter, Input, Output, QueryList } from '@angular/core';
 import { Component, ContentChild, TemplateRef } from '@angular/core';
 import { ModalCloseDirective } from './modal-close.directive';
 
@@ -32,7 +32,7 @@ export class GenericModalComponent<T> {
 
 	public isOpen = false;
 
-	public data: unknown;
+	public data: T;
 
 	constructor() { }
 

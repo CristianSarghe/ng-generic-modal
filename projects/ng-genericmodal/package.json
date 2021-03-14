@@ -1,6 +1,6 @@
 {
-  "name": "ng-genericmodal",
-  "version": "1.0.9",
+  "name": "@cristiansarghe/ng-genericmodal",
+  "version": "1.0.0",
 
   "author": {
     "name": "Cristian Sarghe",
@@ -8,7 +8,6 @@
     "email": "csarghe@gmail.com"
   },
   "license": "MIT",
-
   "main": "../../dist/ng-genericmodal/bundles/ng-genericmodal.umd.js",
   "module": "../../dist/ng-genericmodal/esm2015/ng-genericmodal.js",
   "peerDependencies": {
