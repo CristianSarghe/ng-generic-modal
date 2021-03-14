@@ -76,7 +76,7 @@ In the above example, the Cancel button will hide the modal, while the Submit bu
 | closeOnBackdropClick       | boolean | Optional, default: true    | Allow closing modal by clicking outside (on the backdrop)      |
 | showCloseButton            | boolean | Optional, default: true    | Show or hide the top right X closing button                    |
 
-#### Output()
+#### @Output()
 
 | Output                     | Type               | Payload type                                                      | Description                        |
 | -------------------------- | ------------------ | ----------------------------------------------------------------- | -----------------------------------|
