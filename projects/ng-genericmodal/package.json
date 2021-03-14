@@ -1,0 +1,23 @@
+{
+  "name": "ng-genericmodal",
+  "version": "1.0.9",
+
+  "author": {
+    "name": "Cristian Sarghe",
+    "url": "https://cristiansarghe.com/",
+    "email": "csarghe@gmail.com"
+  },
+  "license": "MIT",
+
+  "main": "../../dist/ng-genericmodal/bundles/ng-genericmodal.umd.js",
+  "module": "../../dist/ng-genericmodal/esm2015/ng-genericmodal.js",
+  "peerDependencies": {
+    "@angular/common": "^10.0.14",
+    "@angular/core": "^10.0.14"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tslib": "^2.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+<br /><br />
+
+
+<button (click)="myModal.open('Chris')">Open modal</button> 
+
+
+<ng-generic-modal #myModal (beforeOpen)="log($event)" (afterOpen)="log($event)" (beforeHide)="log($event)" (afterHide)="log($event)" [showCloseButton]="false">
+  <ng-template #modalHeading let-data="data">
+    Hello {{data}}
+  </ng-template>
+
+  <ng-template #modalBody let-data="data">
+    This is its body
+  </ng-template>
+
+  <ng-template #modalActions>
+    <button modal-close class="primary" (click)="log('JOB DONE')">Action</button>
+    <button modal-close>Cancel</button>
+  </ng-template>
+</ng-generic-modal>

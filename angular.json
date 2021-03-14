@@ -2,5 +2,163 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "ng-genericmodal": {
+      "projectType": "library",
+      "root": "projects/ng-genericmodal",
+      "sourceRoot": "projects/ng-genericmodal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-genericmodal/tsconfig.lib.json",
+            "project": "projects/ng-genericmodal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-genericmodal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-genericmodal/src/test.ts",
+            "tsConfig": "projects/ng-genericmodal/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-genericmodal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-genericmodal/tsconfig.lib.json",
+              "projects/ng-genericmodal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "testApp": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/testApp",
+      "sourceRoot": "projects/testApp/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/testApp",
+            "index": "projects/testApp/src/index.html",
+            "main": "projects/testApp/src/main.ts",
+            "polyfills": "projects/testApp/src/polyfills.ts",
+            "tsConfig": "projects/testApp/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/testApp/src/favicon.ico",
+              "projects/testApp/src/assets"
+            ],
+            "styles": [
+              "projects/testApp/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/testApp/src/environments/environment.ts",
+                  "with": "projects/testApp/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "testApp:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "testApp:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "testApp:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/testApp/src/test.ts",
+            "polyfills": "projects/testApp/src/polyfills.ts",
+            "tsConfig": "projects/testApp/tsconfig.spec.json",
+            "karmaConfig": "projects/testApp/karma.conf.js",
+            "assets": [
+              "projects/testApp/src/favicon.ico",
+              "projects/testApp/src/assets"
+            ],
+            "styles": [
+              "projects/testApp/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/testApp/tsconfig.app.json",
+              "projects/testApp/tsconfig.spec.json",
+              "projects/testApp/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/testApp/e2e/protractor.conf.js",
+            "devServerTarget": "testApp:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "testApp:serve:production"
+            }
+          }
+        }
+      }
+    }},
+  "defaultProject": "ng-genericmodal"
 }

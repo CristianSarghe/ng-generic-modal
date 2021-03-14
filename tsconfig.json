@@ -6,5 +6,18 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/ng-genericmodal/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng-genericmodal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/testApp/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/testApp/tsconfig.spec.json"
+    }
+  ]
 }
