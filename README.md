@@ -52,7 +52,7 @@
 </ng-generic-modal>
 ```
 
-In the above example, the Close button will hide the modal, while the Submit button will run `myMethod()` and then hide the modal. The Options button will not hide the modal, as it doesn't have `modal-close` attached.
+In the above example, the Cancel button will hide the modal, while the Submit button will run `myMethod()` and then hide the modal. The Options button will not hide the modal, as it doesn't have `modal-close` attached.
 
 * **NOTE**: `open` method can receive a _state_ of the modal (which can be any object or primitive value). That value can be accessed within the modal `ng-template`s by simply targeting the `data` variable:
 ```
@@ -76,7 +76,7 @@ In the above example, the Close button will hide the modal, while the Submit but
 | closeOnBackdropClick       | boolean | Optional, default: true    | Allow closing modal by clicking outside (on the backdrop)      |
 | showCloseButton            | boolean | Optional, default: true    | Show or hide the top right X closing button                    |
 
-#### Output()
+#### @Output()
 
 | Output                     | Type               | Payload type                                                      | Description                        |
 | -------------------------- | ------------------ | ----------------------------------------------------------------- | -----------------------------------|
