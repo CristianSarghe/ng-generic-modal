@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ng-genericmodal
+ * Public API Surface of ng-generic-modal
  */
 
 export * from './lib/generic-modal.component';

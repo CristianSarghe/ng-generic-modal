@@ -1,5 +1,5 @@
 {
-  "name": "@cristiansarghe/ng-genericmodal",
+  "name": "@cristiansarghe/ng-generic-modal",
   "version": "1.0.1",
 
   "author": {
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CristianSarghe/ng-genericmodal/tree/main/projects/ng-genericmodal"
+    "url": "https://github.com/CristianSarghe/ng-generic-modal"
   },
   "license": "MIT",
-  "main": "../../dist/ng-genericmodal/bundles/ng-genericmodal.umd.js",
-  "module": "../../dist/ng-genericmodal/esm2015/ng-genericmodal.js",
+  "main": "../../dist/ng-generic-modal/bundles/ng-generic-modal.umd.js",
+  "module": "../../dist/ng-generic-modal/esm2015/ng-generic-modal.js",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"

@@ -3,30 +3,30 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-genericmodal": {
+    "ng-generic-modal": {
       "projectType": "library",
-      "root": "projects/ng-genericmodal",
-      "sourceRoot": "projects/ng-genericmodal/src",
+      "root": "projects/ng-generic-modal",
+      "sourceRoot": "projects/ng-generic-modal/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ng-genericmodal/tsconfig.lib.json",
-            "project": "projects/ng-genericmodal/ng-package.json"
+            "tsConfig": "projects/ng-generic-modal/tsconfig.lib.json",
+            "project": "projects/ng-generic-modal/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-genericmodal/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-generic-modal/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-genericmodal/src/test.ts",
-            "tsConfig": "projects/ng-genericmodal/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-genericmodal/karma.conf.js"
+            "main": "projects/ng-generic-modal/src/test.ts",
+            "tsConfig": "projects/ng-generic-modal/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-generic-modal/karma.conf.js"
           }
         }
       }
@@ -140,5 +140,5 @@
         }
       }
     }},
-  "defaultProject": "ng-genericmodal"
+  "defaultProject": "ng-generic-modal"
 }

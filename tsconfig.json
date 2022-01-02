@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "ng-genericmodal": [
-        "dist/ng-genericmodal/ng-genericmodal",
-        "dist/ng-genericmodal"
+      "ng-generic-modal": [
+        "dist/ng-generic-modal/ng-generic-modal",
+        "dist/ng-generic-modal"
       ]
     }
   }

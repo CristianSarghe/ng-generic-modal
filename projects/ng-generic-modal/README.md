@@ -5,11 +5,11 @@
 
 ### What is it?
 
-`@cristiansarghe/ng-genericmodal` is a _just-add-water_ customizable and lightweight Angular popup.
+`@cristiansarghe/ng-generic-modal` is a _just-add-water_ customizable and lightweight Angular popup.
 
 ### Installation
 
-`npm i @cristiansarghe/ng-genericmodal`
+`npm i @cristiansarghe/ng-generic-modal`
 
 ### Customization
 #### Content

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { GenericModalModule } from 'ng-genericmodal';
+import { GenericModalModule } from 'ng-generic-modal';
 
 import { AppComponent } from './app.component';
 
