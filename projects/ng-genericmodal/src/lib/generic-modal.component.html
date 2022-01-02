@@ -1,6 +1,7 @@
 <ng-container *ngIf="isOpen">
     <div class="ng-generic-modal-outer-container">
         <div class="backdrop" (click)="closeOnBackdropClick && hide()" *ngIf="hasBackdrop"></div>
+
         <div class="modal-container {{customModalContainerClass}}">
             <div class="modal-heading" *ngIf="modalHeading">
                 <div class="modal-heading-container">
@@ -10,9 +11,11 @@
                     <button (click)="hide()">✕</button>
                 </div>
             </div>
+
             <div class="modal-body">
                 <ng-container *ngTemplateOutlet="modalBody || defaultTemplate; context: { data: data }"></ng-container>
             </div>
+            
             <div class="modal-actions" *ngIf="modalActions">
                 <ng-container *ngTemplateOutlet="modalActions; context: { data: data }"></ng-container>
             </div>

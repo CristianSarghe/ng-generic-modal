@@ -41,7 +41,7 @@
 ```
 <ng-generic-modal #modalReference>
 	<ng-template #modalActions>
-		<button modal-close class="primary" (click)="myMethod()">Submit</button>
+		<button modal-close (click)="myMethod()">Submit</button>
 		<button modal-close>Cancel</button>
 		<button>Options</button>
 	</ng-template>

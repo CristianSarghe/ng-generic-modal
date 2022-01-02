@@ -7,6 +7,10 @@
     "url": "https://cristiansarghe.com/",
     "email": "csarghe@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CristianSarghe/ng-genericmodal/tree/main/projects/ng-genericmodal"
+  },
   "license": "MIT",
   "main": "../../dist/ng-genericmodal/bundles/ng-genericmodal.umd.js",
   "module": "../../dist/ng-genericmodal/esm2015/ng-genericmodal.js",
