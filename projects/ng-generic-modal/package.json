@@ -1,12 +1,19 @@
 {
   "name": "@cristiansarghe/ng-generic-modal",
-  "version": "1.0.1",
-
+  "version": "1.1.0",
   "author": {
     "name": "Cristian Sarghe",
     "url": "https://cristiansarghe.com/",
     "email": "csarghe@gmail.com"
   },
+  "keywords": [
+    "angular",
+    "modal",
+    "popup",
+    "template",
+    "lightweight",
+    "generic"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/CristianSarghe/ng-generic-modal"
