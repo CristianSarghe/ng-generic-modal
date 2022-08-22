@@ -1,6 +1,6 @@
 {
   "name": "@cristiansarghe/ng-generic-modal",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "author": {
     "name": "Cristian Sarghe",
     "url": "https://cristiansarghe.com/",
@@ -22,8 +22,8 @@
   "main": "../../dist/ng-generic-modal/bundles/ng-generic-modal.umd.js",
   "module": "../../dist/ng-generic-modal/esm2015/ng-generic-modal.js",
   "peerDependencies": {
-    "@angular/common": "^14.0.14",
-    "@angular/core": "^14.0.14"
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0"
   },
   "dependencies": {
   },
